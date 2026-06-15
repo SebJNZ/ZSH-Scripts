@@ -25,12 +25,14 @@ cm() {
                         ld $LAST_COMPILED.o -o $LAST_COMPILED
                     else
                         echo "Error: '$2' is not a valid x86 architecture"
+                        return 1
                     fi
                 fi
             else
                 gcc $file -o $LAST_COMPILED	
 	        fi
         fi 
+
     fi  
 }
 
@@ -40,8 +42,10 @@ ru() {
 	        ./"$LAST_COMPILED"
         else
 	        echo "$LAST_COMPILED not found in current path."
+            return 1
         fi
     else
         echo "Error: Use 'cm' first!"
+        return 1
     fi
 }
