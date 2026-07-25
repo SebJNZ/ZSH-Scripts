@@ -22,12 +22,12 @@
   Hello, World!
   ```
   ```
-  $ cu main64.asm 64
+  $ cm main64.asm 64
   $ ru
   Hello, World!
   ```
   ```
-  $ cu main32.asm 32
+  $ cm main32.asm 32
   $ ru
   Hello, World!
   ```
