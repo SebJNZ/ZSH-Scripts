@@ -70,7 +70,7 @@ ru() {
             return 1
         fi
     else
-        if [[ $1 == "do_clear" || $1 == "-c" ]]; then
+        if [[ $1 == "clear" || $1 == "-c" ]]; then
             if [[ -n "$do_clear" && "$do_clear" == "true" ]]; then
                 do_clear=false
             else
