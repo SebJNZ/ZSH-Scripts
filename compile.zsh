@@ -34,7 +34,7 @@ cm() {
             javac $file
             ;;
         *)
-            echo "Erro: Unsupported file type '.$ftype'"
+            echo "Error: Unsupported file type '.$ftype'"
             return 1;
             ;;
     esac
